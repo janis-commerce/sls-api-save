@@ -59,6 +59,9 @@ describe('SlsApiSaveData', () => {
 				},
 				headers: {
 					'x-foo': 'bar'
+				},
+				body: {
+					requestBody: 'foo'
 				}
 			});
 
@@ -72,6 +75,9 @@ describe('SlsApiSaveData', () => {
 				method: 'data',
 				headers: {
 					'x-foo': 'bar'
+				},
+				data: {
+					requestBody: 'foo'
 				}
 			});
 
@@ -104,7 +110,9 @@ describe('SlsApiSaveData', () => {
 					entityId: 'the-entity-id'
 				},
 				headers: {},
-				data: {}
+				body: {
+					requestBody: 'foo'
+				}
 			});
 
 			assert.deepStrictEqual(apiResponse, 'the actual response');
@@ -115,7 +123,10 @@ describe('SlsApiSaveData', () => {
 				entityId: 'the-entity-id',
 				action: 'save',
 				method: 'data',
-				headers: {}
+				headers: {},
+				data: {
+					requestBody: 'foo'
+				}
 			});
 
 			sandbox.assert.calledOnce(dispatcherStub.dispatch);
@@ -149,7 +160,9 @@ describe('SlsApiSaveData', () => {
 					entityId: 'the-entity-id'
 				},
 				headers: {},
-				data: {}
+				body: {
+					requestBody: 'foo'
+				}
 			});
 
 			assert.deepStrictEqual(apiResponse, 'the actual response');
@@ -160,7 +173,10 @@ describe('SlsApiSaveData', () => {
 				entityId: 'the-entity-id',
 				action: 'save',
 				method: 'data',
-				headers: {}
+				headers: {},
+				data: {
+					requestBody: 'foo'
+				}
 			});
 
 			sandbox.assert.calledOnce(dispatcherStub.dispatch);
