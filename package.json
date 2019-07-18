@@ -1,6 +1,6 @@
 {
   "name": "@janiscommerce/sls-api-save",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "An integration handler for Serverless and JANIS Views API Save",
   "main": "index.js",
   "scripts": {
@@ -19,9 +19,9 @@
   "homepage": "https://github.com/janis-commerce/sls-api-save#readme",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.17.3",
-    "husky": "^2.4.1",
+    "husky": "^2.7.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
     "sinon": "^7.3.2"
@@ -33,7 +33,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "@janiscommerce/api-view": "^1.2.0",
-    "@janiscommerce/sls-api-response": "^1.1.0"
+    "@janiscommerce/api-view": "^1.3.0",
+    "@janiscommerce/sls-api-response": "^1.1.1"
   }
 }
